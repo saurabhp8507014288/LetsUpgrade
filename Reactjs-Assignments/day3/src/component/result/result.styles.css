@@ -1,0 +1,106 @@
+.result {
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.829);
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	overflow: scroll;
+	display: flex;
+	scrollbar-color: transparent;
+	scrollbar-width: 0px;
+	align-items: center;
+	justify-content: center;
+}
+.result::-webkit-scrollbar {
+	display: none;
+}
+
+.result__inner {
+	width: 70%;
+	height: 80%;
+	min-width: 900px;
+	min-height: 500px;
+	background-color: rgb(209, 209, 209);
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+.result__inner > .result__image {
+	min-width: 350px;
+	width: 350px;
+	height: 100%;
+	background-color: rgb(0, 0, 0);
+}
+
+.result__inner > .result__image > img {
+	width: inherit;
+	height: inherit;
+}
+.result__inner > .result__details {
+	width: 100%;
+	height: 100%;
+	margin-left: 10px;
+
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.result__inner > .result__details > .result__title {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	margin: 10px 0px;
+}
+.result__inner > .result__details > .result__title > h1 {
+	margin: 10px 0px;
+	font-weight: 900;
+	color: rgb(0, 0, 0);
+}
+.result__inner > .result__details > .result__title > .back__arrow {
+	color: black;
+	font-weight: 100;
+	font-size: 2rem;
+	cursor: pointer;
+	margin-right: 20px;
+	margin-top: -20px;
+}
+.result__inner > .result__details > .tagline {
+	font-size: 1rem;
+	margin-top: 10px;
+}
+.result__inner > .result__details > .result__overview > .overview {
+	margin: 10px 0px;
+}
+.result__inner > .result__details > .result__overview {
+	width: 90%;
+}
+
+.result__block {
+	width: 95%;
+	height: max-content;
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	justify-content: space-between;
+}
+
+.result__block > .inner__block > .title {
+	margin: 10px 0px;
+}
+
+.result__block > .inner__block {
+	width: 50%;
+	margin: 10px 0px;
+}
+
+@media only screen and (max-width: 1050px) {
+	.result {
+		align-items: center;
+		justify-content: flex-start;
+	}
+}
